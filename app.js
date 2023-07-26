@@ -37,6 +37,23 @@ const operators = ['+', '-', '*', '/', '√', '%'];
 
 // 3. Create function to operate on two numbers
 
+// function formatOperation(num1, num2, operator) {
+//     let operationString = "";
+//     if (num1 !== "") {
+//       operationString += num1;
+//     }
+
+//     if (operator) {
+//       operationString += " " + operator + " ";
+//     }
+
+//     if (num2 !== "") {
+//       operationString += num2;
+//     }
+
+//     return operationString;
+//   }
+
 function operate(num1, num2, operator) {
   switch (operator) {
     case '+':
@@ -58,14 +75,6 @@ function operate(num1, num2, operator) {
       return perCent(num1);
   }
 }
-
-// 4. Create function to display numbers on screen
-
-// function displayNum(num1, num2, operator) {
-//   ui.num1El.textContent = num1;
-//   ui.num2El.textContent = num2;
-//   ui.operatorEl.textContent = operator;
-// }
 
 // 5. Create function to update numbers
 let currentInput = ''; // Variable to hold the current user input (numbers and operators)
@@ -97,9 +106,9 @@ ui.buttonEl.forEach((button) =>
         num2 = parseFloat(currentInput);
         ui.resultsEl.textContent = operate(num1, num2, operator);
 
-        // Update the UI to display the current operation and result
-        const operationString = formatOperation(num1, num2, operator);
-        ui.resultsEl.textContent = `${operationString} = ${ui.resultsEl.textContent}`;
+        // // Update the UI to display the current operation and result
+        // // const operationString = formatOperation(num1, num2, operator);
+        // ui.resultsEl.textContent = `${operationString} = ${ui.resultsEl.textContent}`;
 
         // Reset all variables for the next operation
         num1 = '';
