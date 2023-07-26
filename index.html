@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <title>TOP Calculator Project</title>
   </head>
   <body>
@@ -11,33 +12,34 @@
     <div id="calculator">
       <div id="operations-display-el">
         <p id="current-operation-el">
-          <span id="num1-el">308</span><span id="operator-el">*</span
-          ><span id="num2-el">42</span>
+          <span id="num1-el"></span><span id="operator-el"></span
+          ><span id="num2-el"></span>
         </p>
-        <p id="results-el">12,936</p>
+        <p id="results-el"></p>
       </div>
       <div id="buttons-container-el">
-        <button id="cleaner" class="operation-btn">C</button>
-        <button id="sqr-root" class="operation-btn">√</button>
-        <button id="minus" class="operation-btn">-</button>
-        <button id="percent" class="operation-btn">%</button>
-        <button id="divider" class="operation-btn">/</button>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="multiplier" class="operation-btn">*</button>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="plus" class="operation-btn">+</button>
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="zero">0</button>
-        <button id="dot">.</button>
-        <button id="delete">&larr;</button>
-        <button id="equal">=</button>
+        <button id="cleaner" class="operation-btn" value="c">C</button>
+        <button id="sqr-root" class="operation-btn" value="√">√</button>
+        <button id="minus" class="operation-btn" value="-">-</button>
+        <button id="percent" class="operation-btn" value="%">%</button>
+        <button id="divider" class="operation-btn" value="/">/</button>
+        <button id="seven" value="7">7</button>
+        <button id="eight" value="8">8</button>
+        <button id="nine" value="9">9</button>
+        <button id="multiplier" class="operation-btn" value="*">*</button>
+        <button id="four" value="4">4</button>
+        <button id="five" value="5">5</button>
+        <button id="six" value="6">6</button>
+        <button id="plus" class="operation-btn" value="+">+</button>
+        <button id="one" value="1">1</button>
+        <button id="two" value="2">2</button>
+        <button id="three" value="3">3</button>
+        <button id="zero" value="0">0</button>
+        <button id="dot" value=".">.</button>
+        <button id="delete" value="&larr;">&larr;</button>
+        <button id="equal" value="=">=</button>
       </div>
     </div>
+    <script src="./app.js" type="module" defer></script>
   </body>
 </html>
