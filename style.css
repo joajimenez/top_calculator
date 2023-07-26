@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body,
+html {
+  background-color: #22252d;
+  height: 100vh;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#operations-display-el {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1rem;
+  padding-top: 8rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3px;
+  /* margin-bottom: 9rem; */
+}
+
+#current-operation-el {
+  font-size: 1.5rem;
+}
+
+#operator-el {
+  color: #de7677;
+}
+
+#results-el {
+  font-size: 3rem;
+}
+
+#buttons-container-el {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 16px 17px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'cleaner . percent divider'
+    'seven eight nine multiplier'
+    'four five six minus'
+    'one two three plus'
+    'zero dot delete equal';
+  background-color: #292d36;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  /* margin-top: 16rem; */
+}
+
+button {
+  padding: 1rem;
+  background-color: #22252d;
+  border: none;
+  color: #fff;
+  font-size: xx-large;
+  border-radius: 1rem;
+}
+
+.operation-btn {
+  color: #de7677;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+#cleaner {
+  grid-area: cleaner;
+}
+
+#minus {
+  grid-area: minus;
+}
+#percent {
+  grid-area: percent;
+}
+#divider {
+  grid-area: divider;
+}
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+#multiplier {
+  grid-area: multiplier;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#plus {
+  grid-area: plus;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#zero {
+  grid-area: zero;
+}
+#dot {
+  grid-area: dot;
+}
+
+#delete {
+  grid-area: delete;
+}

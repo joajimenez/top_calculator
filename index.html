@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>TOP Calculator Project</title>
-</head>
-<body>
-<div class="main-container">
-
-    
-</div>
-    
-</body>
+  </head>
+  <body>
+    <!-- Create a calculator that can add, subtract, multiply, and divide two numbers. The user should be able to choose which operation they want to perform, enter the numbers on which the operation should be performed, and see the result. -->
+    <div id="calculator">
+      <div id="operations-display-el">
+        <p id="current-operation-el">
+          <span id="num1-el">308</span><span id="operator-el">*</span
+          ><span id="num2-el">42</span>
+        </p>
+        <p id="results-el">12,936</p>
+      </div>
+      <div id="buttons-container-el">
+        <button id="cleaner" class="operation-btn">C</button>
+        <button id="sqr-root" class="operation-btn">√</button>
+        <button id="minus" class="operation-btn">-</button>
+        <button id="percent" class="operation-btn">%</button>
+        <button id="divider" class="operation-btn">/</button>
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="multiplier" class="operation-btn">*</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="plus" class="operation-btn">+</button>
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="zero">0</button>
+        <button id="dot">.</button>
+        <button id="delete">&larr;</button>
+        <button id="equal">=</button>
+      </div>
+    </div>
+  </body>
 </html>
